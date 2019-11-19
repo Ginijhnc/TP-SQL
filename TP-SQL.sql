@@ -13,8 +13,7 @@ VALUES (101, "Belgrano", "Blanco Encalada 1844"),
        (109, "Parque Patricios", "Av Caseros 3832"),
        (110, "Monserrat", "Paseo Colon 568");
 
-CREATE TABLE ventas (nroTicket INT NOT NULL, codigoSucursal INT NOT NULL, fecha DATE,
-					montoTotal FLOAT, medioDePago VARCHAR(10), 
+CREATE TABLE ventas (nroTicket INT NOT NULL, codigoSucursal INT NOT NULL, fecha DATE, montoTotal FLOAT, medioDePago VARCHAR(10), 
                     PRIMARY KEY (nroTicket), 
                     FOREIGN KEY(codigoSucursal) REFERENCES sucursales(codigoSucursal));
                     
